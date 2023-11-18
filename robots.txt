@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /*.css?*$
+Host: http://dev-sere.ga 
+Sitemap: http://dev-sere.ga/sitemap.xml 

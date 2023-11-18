@@ -1,0 +1,374 @@
+body{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0
+}
+header{
+    font-family:Tahoma,sans-serif;
+    font-size:24px
+}
+footer{
+    background:#7f7c72
+}
+a{
+    text-decoration:none;
+    color:inherit
+}
+.height-minor{
+    height:10%
+}
+.height-major{
+    min-height:450px;
+    min-height:80%
+}
+.flex-between{
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+}
+.flex-around{
+    display:flex;
+    justify-content:left;
+    align-items:center
+}
+.flex-columns{
+    flex-direction:column
+}
+.footer-byline{
+    display:inline-block;
+    background:#7078a1;
+    color:#fffffe
+}
+.padding-med{
+    padding-left:5%;
+    padding-right:5%
+}
+.padding-small{
+    padding-left:3%;
+    padding-right:3%;
+}
+.line-minor{
+    line-height:10vh;
+}
+.ilya{
+    color:#4b96d0!important;
+}
+.io{
+    font-family:Inconsolata,Consolas,monospace;
+    font-style:italic;
+    color:#268bd2;
+    font-size:32px;
+    line-height:24px;
+    vertical-align:text-bottom
+}
+.code-bg{
+    background:#eee8d5;
+    background-image:linear-gradient(#eee8d5,#ddd7c6 70%)
+}
+.code{
+    font-family:Inconsolata,Consolas,monospace;
+    font-size:18px;
+    line-height:34px
+}
+.comments{
+    color:#859900
+}
+.comments::before{
+    content:'//';
+    padding-right:20px
+}
+.variable{
+    color:#c9e0f3;
+    font-style:italic;
+    margin-left:20px
+}
+.keyword{
+    color:#073642
+}
+.object-defn{
+    padding-left:24px
+}
+.object-defn a:link{
+    text-decoration:none
+}
+.object-defn a:hover{
+    text-decoration:underline;
+    color:#c9e0f3
+}
+.object-defn a:focus{
+    text-decoration:underline
+}
+.object-prop-name{
+    display:inline-block;
+    width:105px;
+    font-size:18px
+}
+.object-prop-name::after{
+    color:#657b83
+}
+.object-prop-value{
+    display:inline-block;
+    font-size:18px;
+    color:#fff
+}
+.object-prop{
+    height:34px;
+    white-space:nowrap;
+    font-size:0
+}
+@keyframes appear{
+    from{
+        opacity:0
+    }
+    to{
+        opacity:1
+    }
+}
+.object-prop img{
+    vertical-align:text-top;
+    height:24px;
+    width:24px;
+    animation:appear .45s cubic-bezier(.4,0,1,1)
+}
+.object-prop::after{
+    content:',';
+    font-size:18px;
+    color:#657b83
+}
+.object-prop:last-child::after{
+    content:''
+}
+.blinking-cursor{
+    font-weight:100;
+    font-size:30px;
+    color:#fff;
+    -webkit-animation:1s blink step-end infinite;
+    -moz-animation:1s blink step-end infinite;
+    -ms-animation:1s blink step-end infinite;
+    -o-animation:1s blink step-end infinite;
+    animation:1s blink step-end infinite
+}
+@keyframes blink{
+    from,to{
+        color:transparent
+    }
+    50%{
+        color:#fff
+    }
+}
+@-moz-keyframes blink{
+    from,to{
+        color:transparent
+    }
+    50%{
+        color:#fff
+    }
+}
+@-webkit-keyframes blink{
+    from,to{
+        color:transparent
+    }
+    50%{
+        color:#fff
+    }
+}
+@-ms-keyframes blink{
+    from,to{
+        color:transparent
+    }
+    50%{
+        color:#4b96d0
+    }
+}
+@-o-keyframes blink{
+    from,to{
+        color:transparent
+    }
+    50%{
+        color:#000
+    }
+}
+body{
+    font-family:Inconsolata,Consolas,monospace;
+    font-size:18px
+}
+.left .object-defn{
+    margin-left:80px
+}
+.left .keyword,.left div.chars{
+    margin-left:40px
+}
+.right .object-defn{
+    margin-left:50px
+}
+.right div.chars{
+    margin-left:26px
+}
+.card-part{
+    min-width:580px;
+    min-height:240px;
+    padding:40px;
+    margin:5px 5px;
+    font-size:18px;
+    line-height:34px
+}
+.right{
+    padding-top:40px
+}
+.object-prop-value::before{
+    margin-left:-3px;
+    margin-right:8px
+}
+.object-prop-name::after{
+    margin-left:20px
+}
+.logos{
+    margin:33px 0 10px 0
+}
+img{
+    width:41px;
+    height:41px;
+    margin:2px
+}
+svg{
+    -webkit-background-clip:text
+}
+.code-lang{
+    display:block;
+	color:#A9A9A9;
+}
+.vizitka{
+    display:-webkit-flex;
+    -webkit-flex-wrap:wrap;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center
+}
+.card-part{
+    font-family:Inconsolata,Consolas,monospace;
+    border:1px solid #c2c2c2;
+    border-style:double
+}
+.left{
+    background-color:#fff
+}
+.right{
+    background-color:#4b96d0
+}
+.object-prop-value::before{
+    content:':';
+    color:#1b1817
+}
+.object-prop-name::after{
+    color:#657b83
+}
+.object-prop-name::after{
+    color:#657b83
+}
+.logos{
+    display:-webkit-flex;
+    -webkit-flex-wrap:wrap;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:left
+}
+.left .object-prop-value{
+    font-weight:700
+}
+.left span.object-prop-value{
+    color:#4b96d0
+}
+.right span.object-prop-name{
+    color:#fff
+}
+hr{
+    border:none;
+    background-color:#fff;
+    color:#fff;
+    height:2px;
+    align-items:center;
+    width:100%
+}
+.left span.variable{
+    color:#4b96d0;
+    font-weight:700
+}
+.right .variable{
+    font-weight:700
+}
+@media (max-width:690px){
+    .card-part{
+        min-width:88%;
+        padding:25px
+    }
+    .left .object-defn{
+        margin-left:10%
+    }
+    .right .object-defn{
+        margin-left:10%
+    }
+    .object-defn{
+        padding:0
+    }
+    .left .keyword,.left div.chars{
+        margin-left:0
+    }
+    .object-prop{
+        height:inherit;
+        white-space:inherit
+    }
+    .right .object-prop-name{
+        width:auto;
+        font-size:16px;
+        display:none
+    }
+    .right .object-prop-value::before{
+        display:none
+    }
+    .right .logos{
+        display:none
+    }
+    img[alt*=JavaScript],img[alt*=PHP],img[alt*=WebSecurity]{
+        display:none
+    }
+    .object-prop-value{
+        font-size:16px
+    }
+    .logos{
+        justify-content:center;
+        margin:10px 0
+    }
+    .variable{
+        margin-left:0
+    }
+    .right div.chars{
+        margin-left:0
+    }
+}
+a{
+    text-decoration:none!important
+}
+@media (max-width:380px){
+    img[alt*="MySQL DB"],img[alt*="Smarty template engine"],img[alt*=JavaScript],img[alt*=PHP],img[alt*=WebSecurity]{
+        display:none!important
+    }
+    .object-prop-value a[href="mailto:sergey.k.web.developer@gmail.com"]{
+        font-size:15px
+    }
+    .object-prop-name{
+        font-size:16px
+    }
+}
+@media (max-width:366px){
+    .left .object-defn{
+        margin-left:5%
+    }
+    .right .object-defn{
+        margin-left:5%
+    }
+    .object-prop-name,.object-prop-value{
+        font-size:14px
+    }
+}

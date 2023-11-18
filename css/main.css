@@ -1,0 +1,254 @@
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+header {
+  font-family: Tahoma, sans-serif;
+  font-size: 24px;
+}
+
+footer {
+  background: #7F7C72;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.height-minor {
+  height: 10%;
+}
+
+.height-major {
+  height: 80%;
+  min-height: 450px;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-columns {
+  flex-direction: column;
+}
+
+.footer-byline {
+  display: inline-block;
+  background: #7078A1;
+  color: #FFFFFE;
+}
+
+.padding-med {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.padding-small {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.line-minor {
+  line-height: 10vh;
+}
+
+.serg {
+  color: #073642;
+}
+
+.io {
+  font-family: Inconsolata, Consolas, monospace;
+  font-style: italic;
+  color: #268bd2;
+  font-size: 32px;
+  line-height: 24px;
+  vertical-align: text-bottom;
+}
+
+.code-bg {
+  background: #eee8d5;
+  background-image: linear-gradient(#eee8d5, #DDD7C6 70%);
+}
+
+.code {
+  font-family: Inconsolata, Consolas, monospace;
+  font-size: 18px;
+  line-height: 34px;
+}
+
+.comments {
+  color: #859900;
+}
+
+.comments::before {
+  content: '//';
+  padding-right: 20px;
+}
+
+.variable {
+  color: #268bd2;
+  font-style: italic;
+}
+
+.keyword {
+  color: #073642;
+}
+
+.chars {
+  color: #657b83;
+}
+
+.object-defn {
+  padding-left: 24px;
+}
+
+.object-defn a:link {
+  color: #2aa198;
+  text-decoration: none;
+}
+
+.object-defn a:hover {
+  text-decoration: underline;
+  color: #268bd2;
+}
+
+.object-defn a:focus {
+  text-decoration: underline;
+}
+
+.object-defn a:visited {
+  color: #839496;
+}
+
+.object-prop-name {
+  color: #cb4b16;
+  display: inline-block;
+  width: 185px;
+  font-size: 18px;
+}
+
+.object-prop-name::after {
+  content: ':';
+  color: #657b83;
+}
+
+.object-prop-value {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.object-prop {
+  height: 34px;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.object-prop img {
+  vertical-align: text-top;
+  height: 24px;
+  width: 24px;
+  animation: appear .45s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.object-prop::after {
+  content: ',';
+  font-size: 18px;
+  color: #657b83;
+}
+
+.object-prop:last-child::after {
+  content: '';
+}
+
+.about-me {
+}
+
+@media print {
+  /** white background **/
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    font-size: 18px;
+  }
+
+  .io {
+    font-size: 22px;
+    line-height: 18px;
+  }
+
+  .code, .object-prop-name, .object-prop-value, .object-prop-value::after {
+    font-size: 15px;
+  }
+
+  .object-prop-name {
+    width: 144px;
+  }
+}
+
+@media screen and (max-width: 395px) {
+
+  .code {
+    line-height: 30px;
+  }
+
+  .code, .object-prop-name, .object-prop-value, .object-prop-value::after {
+    font-size: 14px;
+  }
+
+  .object-prop-name {
+    width: 135px;
+  }
+
+  .object-prop {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header {
+    font-size: 16px;
+  }
+
+  .code {
+    line-height: 26px;
+  }
+
+  .code, .object-prop-name, .object-prop-value, .object-prop-value::after {
+    font-size: 12px;
+  }
+
+  .object-prop-name {
+    width: 108px;
+  }
+
+  .object-defn {
+    padding-left: 14px;
+  }
+
+  .object-prop {
+    height: 26px;
+  }
+}
